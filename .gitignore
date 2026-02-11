@@ -1,0 +1,8 @@
+.vs/
+bin/
+obj/
+*.ipch
+*.pdb
+*.ilk
+*.user
+*.suo
