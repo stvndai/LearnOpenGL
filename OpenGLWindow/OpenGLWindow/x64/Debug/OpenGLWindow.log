@@ -1,2 +1,5 @@
-﻿  shaderE3.cpp
+﻿  textureE4.cpp
+C:\Users\Steven\Desktop\coder\LearnOpenGL\OpenGLWindow\textureE4.cpp(10,16): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Steven\Desktop\coder\LearnOpenGL\OpenGLWindow\textureE4.cpp(193,21): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\Steven\Desktop\coder\LearnOpenGL\OpenGLWindow\textureE4.cpp(197,21): warning C4305: '-=': truncation from 'double' to 'float'
   OpenGLWindow.vcxproj -> C:\Users\Steven\Desktop\coder\LearnOpenGL\OpenGLWindow\x64\Debug\OpenGLWindow.exe

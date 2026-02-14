@@ -55,7 +55,7 @@ int main()
 
     // shaders
 
-    Shader texShader("./shaders/textureVertexShader.vs", "./shaders/textureFragmentShader.fs");
+    Shader texShader("./shaders/textureVertexShader.vs", "./shaders/textureE1.fs");
 
     //define texture cordinates
 
@@ -161,7 +161,7 @@ int main()
         glBindVertexArray(VAO);
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
         glBindVertexArray(0);
-        
+
 
         glfwSwapBuffers(window);
         glfwPollEvents();

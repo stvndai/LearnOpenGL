@@ -140,14 +140,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="glad.c" />
-    <ClCompile Include="shaderE3.cpp" />
+    <ClCompile Include="textureE4.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader.h" />
+    <ClInclude Include="stb_image.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="shaders\fragmentShader.txt" />
     <None Include="shaders\vertexShader.txt" />
+    <None Include="shaders\textureE4.fs" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="shaders\slideRightShader.txt" />

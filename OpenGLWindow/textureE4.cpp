@@ -7,6 +7,8 @@
 #include <stb/stb_image.h>
 #include "Shader.h"
 
+float alphaVal = 0.2;
+
 int main()
 {
     glfwInit();
@@ -39,6 +41,7 @@ int main()
 
     bool isFill = true;
     void processInput(GLFWwindow * window);
+    void setFaceAlpha(GLFWwindow * window, Shader & shader);
 
     float vertices[] = {
         // positions          // colors           // texture coords
@@ -55,7 +58,7 @@ int main()
 
     // shaders
 
-    Shader texShader("./shaders/textureVertexShader.vs", "./shaders/textureFragmentShader.fs");
+    Shader texShader("./shaders/textureVertexShader.vs", "./shaders/textureE4.fs");
 
     //define texture cordinates
 
@@ -144,7 +147,7 @@ int main()
     while (!glfwWindowShouldClose(window))
     {
         processInput(window);
-
+        setFaceAlpha(window, texShader);
         // clear screen FIRST
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
@@ -183,4 +186,15 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 void processInput(GLFWwindow* window) {
     if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
         glfwSetWindowShouldClose(window, true);
+}
+
+void setFaceAlpha(GLFWwindow* window, Shader& shader) {
+    if (glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS) {
+        alphaVal += 0.0001;
+        shader.setFloat("alpha", alphaVal);
+    }
+    else if (glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS) {
+        alphaVal -= 0.0001;
+        shader.setFloat("alpha",  alphaVal);
+    }
 }
