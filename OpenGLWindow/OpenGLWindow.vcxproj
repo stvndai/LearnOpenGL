@@ -139,8 +139,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="camera.cpp" />
     <ClCompile Include="glad.c" />
-    <ClCompile Include="textureE4.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader.h" />
@@ -149,7 +149,6 @@
   <ItemGroup>
     <None Include="shaders\fragmentShader.txt" />
     <None Include="shaders\vertexShader.txt" />
-    <None Include="shaders\textureE4.fs" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="shaders\slideRightShader.txt" />

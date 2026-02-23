@@ -18,7 +18,7 @@
     <ClCompile Include="glad.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="textureE4.cpp">
+    <ClCompile Include="camera.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -33,7 +33,6 @@
   <ItemGroup>
     <None Include="shaders\vertexShader.txt" />
     <None Include="shaders\fragmentShader.txt" />
-    <None Include="shaders\textureE4.fs" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="shaders\slideRightShader.txt" />
