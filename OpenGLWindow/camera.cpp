@@ -2,9 +2,9 @@
 #include <GLFW/glfw3.h>
 
 #include <iostream>
-#include <glm-1.0.3/glm/glm.hpp>
-#include <glm-1.0.3/glm/gtc/matrix_transform.hpp>
-#include <glm-1.0.3/glm/gtc/type_ptr.hpp>
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/type_ptr.hpp>
 #define STB_IMAGE_IMPLEMENTATION
 #include <stb/stb_image.h>
 #include "Shader.h"
@@ -67,8 +67,8 @@ int main()
 
     // build and compile our shader zprogram
     // ------------------------------------
-    Shader ourShader("C:\\Users\\Steven\\Desktop\\coder\\LearnOpenGL\\OpenGLWindow\\shaders\\coordShader.vs",
-        "C:\\Users\\Steven\\Desktop\\coder\\LearnOpenGL\\OpenGLWindow\\shaders\\textureFragmentShader.fs");
+    Shader ourShader("shaders\\coordShader.vs",
+        "shaders\\textureFragmentShader.fs");
 
     // set up vertex data (and buffer(s)) and configure vertex attributes
     // ------------------------------------------------------------------
